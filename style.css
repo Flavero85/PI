@@ -1,0 +1,68 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("pattern.png");
+}
+
+/* Menu de Navegação */
+.navbar {
+    margin-bottom: 20px;
+    background-image: url(pattern.png);
+    align-items: center;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Carrossel */
+.carousel-item {
+    height: 500px;
+    
+}
+
+.carousel-item img {
+    height: 700px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+/* Indicadores do Carrossel */
+.carousel-indicators li {
+    background-color: #007bff;
+}
+
+.carousel-indicators .active {
+    background-color: #0056b3;
+}
+
+/* Controles do Carrossel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
