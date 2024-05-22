@@ -1,7 +1,7 @@
 /* Geral */
 body {
     font-family: Arial, sans-serif;
-    background-image: url("pattern.png");
+    background-image: url("img/pattern.png");
 }
 
 /* Menu de Navegação */
@@ -9,10 +9,13 @@ body {
     margin-bottom: 20px;
     background-image: url(pattern.png);
     align-items: center;
+    font-size: 30px;
+    background-image: url("img/pattern.png");
 }
 
 .navbar-brand {
     font-weight: bold;
+    
 }
 
 .navbar-nav .nav-link {
