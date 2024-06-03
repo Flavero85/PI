@@ -4,7 +4,7 @@ $titulo = $_POST["titulo"];
 $descricao = $_POST["descricao"];
 
 include "conexao.php";
-$sql = "insert into tarefas(titulo, descricao) values('$titulo', '$descricao')";
+$sql = "insert into bd_eventos(titulo, descricao) values('$titulo', '$descricao')";
 
 $resultado = mysqli_query($conexao, $sql);
 
