@@ -2,23 +2,29 @@
 include "cabecalho.php"; 
 $id = $_GET['id'];
 $titulo = "";
+$data = "";
 $descricao = "";
+$foto = "";
 
 include "conexao.php";
-$sql = "select * from tarefas where id = $id";
+$sql = "select * from bd_eventos where id = $id";
 $resultado = mysqli_query($conexao, $sql);
-while($umaTarefa = mysqli_fetch_assoc($resultado)){
-    $titulo = $umaTarefa['titulo'];
-    $descricao = $umaTarefa['descricao'];
+while($novoEvento = mysqli_fetch_assoc($resultado)){
+    $titulo = $novoEvento['titulo'];
+    $descricao = $novoEvento['descricao'];
 }
 
 ?>
-<h2>Cadastrar nova tarefa</h2>
-<form method="post" action="editar-salvar-formulario.php?id=<?=$id;?>">
+<h2>Cadastrar novo Evento</h2>
+<form method="post" action="atualizar-evento.php?id=<?=$id;?>">
     <label for="titulo">Título</label>
-    <input value="<?=$titulo;?>" type="text" name="titulo" id="titulo" required maxlength="100">
+    <input value="<?=$titulo;?>" type="text" name="titulo" id="titulo" required maxlength="50">
+    <label for="data">Data</label>
+    <input value="<?=$data;?>" type="text" name="data" id="data" required maxlength="50">
     <label for="descricao">Descrição</label>
-    <textarea name="descricao" id="descricao"><?=$descricao;?></textarea>
+    <input value="<?=$descricao;?>" type="text" name="descricao" id="descricao" required maxlength="100">
+    <label for="foto">Foto</label>
+    <input value="<?=$foto;?>" type="text" name="foto" id="foto" required maxlength="1000">
     <button type="submit" class="btn btn-success">Salvar alteração</button>
 </form>
 <?php include "rodape.php"; ?>
