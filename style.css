@@ -145,3 +145,9 @@ h1{
     padding-top: 100px;
     padding-bottom: 30px;
 }
+
+.logo {
+    width: 100px; /* Defina a largura */
+    height: auto;  /* A altura será ajustada proporcionalmente */
+    aspect-ratio: 16/9; /* Mantenha a proporção 16:9 */
+  }
