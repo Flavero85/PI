@@ -1,5 +1,11 @@
 <?php include ("cabecalho.php")?>
 
+<h2>Cadastrar novo Evento</h2>
+<form  method="post" action="form-adicionar-evento.php?id=<?=$id;?>">
+    
+<a href="form-adicionar-evento.php" class="btn btn-dark">ADICIONAR EVENTO</a>
+</form>
+
 <!-- Seção de Cards -->
 <div class="container mt-4">
     <h1>Proximos Eventos</h1>
