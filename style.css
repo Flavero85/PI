@@ -150,8 +150,4 @@ h1{
     width: 100px; /* Defina a largura */
     height: auto;  /* A altura será ajustada proporcionalmente */
     aspect-ratio: 16/9; /* Mantenha a proporção 16:9 */
-  }
-
-button{
-    text-align: center;
 }
