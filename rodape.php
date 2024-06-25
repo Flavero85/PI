@@ -3,10 +3,10 @@
 <!-- Footer -->
 <footer class="bg-light text-center text-lg-start w-100">
     <div class="container p-4 d-flex justify-content-between">
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Meu Site</h5>
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-left">
+            <h5 class="text-uppercase">Projeto Integrador T.I-22</h5>
             <p>
-                Este é um exemplo de pagina usando HTML CSS JS PHP e Bootstrap <br> para o Projeto Integrador da turma T.I-22.
+                Este é um exemplo de pagina usando <br> HTML, CSS, JAVA SCRIPT, PHP e Bootstrap <br> para o Projeto Integrador da turma T.I-22.
             </p>
         </div>
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-right ">
@@ -14,9 +14,7 @@
             <h5 class="text-uppercase">Igor Santos</h5>
             <h5 class="text-uppercase">Guilherme Rossi</h5>
             <ul class="list-unstyled mb-0">
-                <li>
-                    <a href="#!" class="text-dark">T.I-22 Porr*</a>
-                </li>
+                
             </ul>
         </div>
     </div>

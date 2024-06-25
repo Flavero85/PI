@@ -11,25 +11,25 @@
         <div class="carousel-item active">
             <img src="img/foto1.jpg" class="d-block " alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Evento 1</h5>
-                <p>Data do Evento</p>
-                <p>Local do Evento</p>
+                <h5>FLUXO FEST</h5>
+                <p>Aqui você não fica sem rolê</p>
+                <p>cadastre seu evento</p>
             </div>
         </div>
         <div class="carousel-item">
             <img src="img/foto2.jfif" class="d-block " alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Evento 2</h5>
-                <p>Data do Evento</p>
-                <p>Local do Evento</p>
+                <h5>FLUXO FEST</h5>
+                <p>Aqui você não fica sem rolê</p>
+                <p>cadastre seu evento</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/foto6.jfif" class="d-block " alt="...">
+            <img src="img/banner1.jpg" class="d-block " alt="...">
             <div class="carousel-caption d-none d-md-block">
-                <h5>Evento 3</h5>
-                <p>Data do Evento</p>
-                <p>Local do Evento</p>
+                <h5>FLUXO FEST</h5>
+                <p>Aqui você não fica sem rolê</p>
+                <p>cadastre seu evento</p>
             </div>
         </div>
     </div>
@@ -47,66 +47,46 @@
     <h1>Proximos Eventos</h1>
     <div class="row">
         
-        <div class="col-lg-4 col-md-6 mb-4">
+        
+            <?php
+                $servidor = "127.0.0.1";
+                $usuario = "root";
+                $senha = ""; 
+                $bd = "bd_eventos";
+
+                $conexao = mysqli_connect($servidor, $usuario, $senha, $bd);
+
+                if (!$conexao) {
+                    die("Falha na conexão: " . mysqli_connect_error());
+                }
+
+                $sql = "SELECT * FROM tb_eventos ORDER BY data ASC LIMIT 3";
+
+                $resultado = mysqli_query($conexao, $sql);
+
+                if (mysqli_num_rows($resultado) > 0) {
+            ?>
+                    <div class="container  mt-4">
+                        <div class="row">
+            <?php
+                    while ($umEvento = mysqli_fetch_assoc($resultado)) {
+            ?>
+             <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
-                <img src="img/foto1.jpg" class="card-img-top" alt="...">
+            <img height="250" src="img/<?php echo $umEvento["foto"]; ?>" alt="<?php echo $umEvento["titulo"]; ?>" class="">
                 <div class="card-body">
-                    <h5 class="card-title">Card 1</h5>
-                    <p class="card-text">Descrição do card 1.</p>
-                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                    <h5 class="card-title"><p><?php echo $umEvento["titulo"]; ?></p></h5>
+                    <p class="card-text"><p><?php echo $umEvento["data"]; ?></p></p>
+                    <p class="card-text"><p><?php echo $umEvento["descricao"]; ?></p></p>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-                <img src="img/foto2.jfif" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card 2</h5>
-                    <p class="card-text">Descrição do card 2.</p>
-                    <a href="#" class="btn btn-primary">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-                <img src="img/foto6.jfif" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card 3</h5>
-                    <p class="card-text">Descrição do card 3.</p>
-                    <a href="#" class="btn btn-primary">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-                <img src="img/foto1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card 4</h5>
-                    <p class="card-text">Descrição do card 4.</p>
-                    <a href="#" class="btn btn-primary">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-                <img src="img/foto2.jfif" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card 5</h5>
-                    <p class="card-text">Descrição do card 5.</p>
-                    <a href="#" class="btn btn-primary">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-                <img src="img/foto6.jfif" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card 6</h5>
-                    <p class="card-text">Descrição do card 6.</p>
-                    <a href="#" class="btn btn-primary">Saiba mais</a>
-                </div>
-            </div>
-        </div>
+            <?php
+                    }}
+            ?>
+
+<hr>
+          
     </div>
 </div>
 

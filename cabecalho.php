@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Estrutura</title>
+    <title>Fluxo Fest</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
 <!-- Menu Responsivo -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<a class="navbar-brand " href="index.php"><img src="img/logo.png" alt="" style="width: 300px; height: auto;"></a>
+<a class="navbar-brand " href="index.php"><img src="img/logopi.png" alt="" style="width: 300px; height: auto;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="pi.php" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

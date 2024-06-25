@@ -14,7 +14,7 @@ $foto = "";
     <br>
     <input type="text" name="descricao" placeholder="descricao" class="form-control">
     <br>
-    <input type="date" name="data" placeholder="data" class="form-control">
+    <input type="data" name="data" placeholder="data" class="form-control">
     <br>
     <input type="file" name="foto" placeholder="foto" class="form-control">
     <br>
