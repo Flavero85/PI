@@ -9,6 +9,8 @@
             font-family: Arial, sans-serif; /* Escolha a fonte desejada */
             background-color: #f0f0f0; /* Cor de fundo */
             padding: 20px; /* Espaçamento interno */
+            background: rgb(205,108,246);
+            background: linear-gradient(207deg, rgba(205,108,246,1) 0%, rgba(9,9,121,1) 51%, rgba(69,231,96,1) 100%);
         }
         .container {
             max-width: 1000px; /* Largura máxima do conteúdo */
@@ -21,8 +23,9 @@
  
         h1 {
             text-align: center; /* Centraliza o título */
-            font-size: 24px; /* Tamanho da fonte */
+            font-size: 30px; /* Tamanho da fonte */
             margin-bottom: 20px; /* Espaçamento abaixo do título */
+            color:black
         }
         h5 {
             text-align: justify; /* Justifica o texto */
@@ -33,9 +36,10 @@
 </head>
 <body>
     <div class="container">
-       
-        <h1>Quem Somos</h1>
-       
+        
+        <div class="text-dark">
+            <h1>Quem Somos</h1>
+        </div>
         <h5><br>
             Projeto de Site de Eventos do Curso Técnico de Informática do Senac Americana-SP<br><br><br>
  

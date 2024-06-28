@@ -1,7 +1,10 @@
 /* Geral */
 body {
     font-family: Arial, sans-serif;
-    background-image: url("img/pattern.png");
+    background-color: #f0f0f0; /* Cor de fundo */
+    padding: 20px; /* Espaçamento interno */
+    background: rgb(205,108,246);
+    background: linear-gradient(207deg, rgba(205,108,246,1) 0%, rgba(9,9,121,1) 51%, rgba(69,231,96,1) 100%);
 }
 
 /* Menu de Navegação */
@@ -144,6 +147,7 @@ h1{
     text-align: center;
     padding-top: 100px;
     padding-bottom: 30px;
+    color:white;
 }
 
 .logo {
@@ -154,4 +158,12 @@ h1{
 
 button{
     text-align: center;
+}
+
+h3{
+    color: white;
+}
+
+h2{
+    color:white;
 }

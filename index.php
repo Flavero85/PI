@@ -9,7 +9,7 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/foto1.jpg" class="d-block " alt="...">
+            <img src="img/banner1.png" class="d-block " alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>FLUXO FEST</h5>
                 <p>Aqui você não fica sem rolê</p>
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/foto2.jfif" class="d-block " alt="...">
+            <img src="img/banner2.png" class="d-block " alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>FLUXO FEST</h5>
                 <p>Aqui você não fica sem rolê</p>
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img src="img/banner1.jpg" class="d-block " alt="...">
+            <img src="img/banner3.png" class="d-block " alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>FLUXO FEST</h5>
                 <p>Aqui você não fica sem rolê</p>
