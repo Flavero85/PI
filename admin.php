@@ -10,7 +10,7 @@
 
   
   <section class="container-table">
-  <table class="table table-table-striped table-hover">
+  <table class="table table-table-striped table-hover text-white">
       <thead>
         <tr>
           <th>Titulo</th>
@@ -27,7 +27,7 @@
         include "conexao.php";
         $sql = "select * from tb_eventos order by data asc";
         $resultado = mysqli_query($conexao, $sql);
-
+                     
         while($umEvento = mysqli_fetch_assoc($resultado)){ 
         ?>
 
